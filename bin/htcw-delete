@@ -1,0 +1,2 @@
+#!/bin/sh
+aws s3 --profile=$1 rm --recursive $2

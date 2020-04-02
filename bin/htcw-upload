@@ -1,0 +1,2 @@
+#!/bin/sh
+aws s3 --profile=$1 sync --delete --exclude=".env" --exclude=".git/*" --exclude=".idea/*" $2 $3
