@@ -1,6 +1,6 @@
 include .env
 
-upload:
+htcw-upload:
 	aws s3 --profile=${PROFILE} sync --delete ${SOURCE} ${DEST}
-delete:
+htcw-delete:
 	aws s3 --profile=${PROFILE} rm --recursive ${DEST}
